@@ -1,0 +1,51 @@
+.project-container {
+    max-width: 90%;
+    margin: 4rem auto;
+    padding: 0.5rem;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    h3 {
+        font-size: $header2;
+        padding: 1.8rem 0;
+        font-weight: lighter;
+    }
+
+    p{
+        font-size: 1.8;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        font-size: $text; 
+        padding: 1.2rem;
+        margin: 0.5rem;
+        border: 2px solid #48d39f;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+}
+
+.card {
+    
+}
+
+.card-description {
+    padding: 1rem;
+}
+
+@media (min-width: 780px) {
+    .project-container {
+        margin: 10rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+}
