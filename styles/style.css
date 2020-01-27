@@ -335,11 +335,60 @@ nav ul {
   display: inline-block;
 }
 
+.project-container .live-demo {
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  text-align: center;
+}
+
+.project-container .live-demo a {
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #48d39f;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-image:hover .live-demo {
+  display: block;
+}
+
+.card-image {
+  position: relative;
+}
+
 .card-description {
   padding: 1rem;
 }
 
+.white_bg {
+  background-color: #fff;
+}
+
 @media (min-width: 780px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
   .project-container {
     margin: 10rem auto;
     display: -ms-grid;
@@ -418,48 +467,38 @@ nav ul {
   background: #33696b;
 }
 
+@media (max-width: 600px) {
+  .form-section form textarea {
+    width: 250px;
+  }
+  .form-section form button {
+    width: 50%;
+  }
+}
+
 footer {
   background: #153453;
   color: white;
   min-height: 10vh;
-  padding: 0% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-footer ul {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer h4 {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 rem;
+          flex: 1 1 rem;
 }
 
 @media screen and (max-width: 1332px) {
