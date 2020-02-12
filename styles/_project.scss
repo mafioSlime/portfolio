@@ -2,28 +2,32 @@
     max-width: 90%;
     margin: 4rem auto;
     padding: 0.5rem;
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
 
 
 
-    img{
+    img {
         width: 100%;
-        object-fit: contain;
-        
+
+
     }
+
     h3 {
         font-size: $header2;
         padding: 1.8rem 0;
         font-weight: lighter;
     }
 
-    p{
+    p {
         font-size: 1.8;
         padding: 1rem 0;
         margin-bottom: 1rem;
     }
 
-     span {
-        font-size: $text; 
+    span {
+        font-size: $text;
         padding: 1.2rem;
         margin: 0.5rem;
         border: 2px solid #48d39f;
@@ -32,66 +36,68 @@
     }
 
 
-.live-demo {
-    position: absolute;
-    max-width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    text-align: center;
-   
+    .live-demo {
+        position: absolute;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        text-align: center;
 
-    a {
-        font-size: 1.8rem; 
-        padding: 1rem;
-        margin: 0.5rem;
-        background-color: #48d39f;
-        color: #fff;
-        border-radius: 10px;
-        display: inline-block;   
-        cursor: pointer;
+
+        a {
+            font-size: 1.8rem;
+            padding: 1rem;
+            margin: 0.5rem;
+            background-color: #48d39f;
+            color: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
     }
+
 }
 
+.card {
+    margin: 4rem auto;
 }
 
 .card-image:hover .live-demo {
     display: block;
 }
 
-
-
 .card-image {
     position: relative;
 
-.card-description {
-    padding: 1rem;
-}
+    .card-description {
+        padding: 1rem;
+    }
 
-.white_bg { 
-    background-color: #fff;
-}
+    .white_bg {
+        background-color: #fff;
+    }
 }
 
 @media (min-width: 780px) {
-    .card {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-    }
     .project-container {
-        margin: 10rem auto;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
-        span {
-            font-size: 1.8rem;
-        }
     }
-
 }
 
+//     .project-container {
 
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-gap: 1rem;
+
+//         span {
+//             font-size: 1.8rem;
+//         }
+//     }
+
+// }

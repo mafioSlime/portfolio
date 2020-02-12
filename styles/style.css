@@ -302,12 +302,16 @@ nav ul {
   max-width: 90%;
   margin: 4rem auto;
   padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-container img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .project-container h3 {
@@ -362,6 +366,10 @@ nav ul {
   cursor: pointer;
 }
 
+.card {
+  margin: 4rem auto;
+}
+
 .card-image:hover .live-demo {
   display: block;
 }
@@ -379,22 +387,9 @@ nav ul {
 }
 
 @media (min-width: 780px) {
-  .card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-  }
   .project-container {
-    margin: 10rem auto;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  .project-container span {
-    font-size: 1.8rem;
   }
 }
 
