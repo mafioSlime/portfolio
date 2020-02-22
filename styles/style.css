@@ -313,6 +313,7 @@ nav ul {
 .project-container img {
   width: 100%;
   height: 578px;
+  border-radius: 25px;
 }
 
 .project-container h3 {
