@@ -8,25 +8,29 @@ nav {
     min-height: 10vh;
     width: 60%;
     flex-wrap: wrap;
-    .logo{
-        @include flex(flex-start, center,row);
+
+    .logo {
+        @include flex(flex-start, center, row);
         flex: 1 1 10rem;
+
         h1 {
             margin: 2rem;
         }
     }
-    ul{
+
+    ul {
         @include flex(space-around, center, row);
         flex: 1 1 40rem;
     }
 }
 
-.intro{
+.intro {
     min-height: 90vh;
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
     @include flex(space-between, center, row);
+
     h2 {
         font-size: 8rem;
         padding-top: 2rem;
@@ -35,12 +39,14 @@ nav {
         // -webkit-text-fill-color: transparent;
         display: inline-block;
     }
+
     h3 {
         font-size: 5.2rem;
         padding: 2rem 0rem;
-      
-        
+
+
     }
+
     p {
         padding-top: 2.5rem;
         color: $gray-text;
@@ -49,9 +55,9 @@ nav {
     }
 }
 
-    
 
-.splash{
+
+.splash {
     position: absolute;
     top: 0%;
     right: 0;
@@ -60,13 +66,25 @@ nav {
 }
 
 .intro-social {
+    display: flex;
+    align-items: center;
     margin-top: 4rem;
+
     a {
         margin-right: 5rem;
+
         &:hover {
             opacity: 0.9;
         }
     }
+}
+
+.resume {
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .active {
@@ -94,17 +112,18 @@ nav {
     transform-origin: bottom;
 }
 
-#clock-arrow{
+#clock-arrow {
     animation: clock 1.5s infinite linear;
     transform-box: fill-box;
     transform-origin: bottom;
 }
 
 @keyframes me {
-    from{
+    from {
         transform: rotateZ(-5deg);
     }
-    to{
+
+    to {
         transform: rotateZ(5deg)
     }
 }
@@ -113,6 +132,7 @@ nav {
     from {
         transform: translateY(0%);
     }
+
     to {
         transform: translateY(-30%);
     }
@@ -122,6 +142,7 @@ nav {
     from {
         transform: rotateZ(0deg);
     }
+
     to {
         transform: rotateZ(360deg);
     }
