@@ -477,6 +477,12 @@ nav ul {
   font-size: 2rem;
 }
 
+.form-section form button {
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
 .form-section form .input {
   width: 100%;
   padding: 2rem;
