@@ -1,5 +1,5 @@
 .project-container {
-  max-width: 90%;
+  max-width: 70%;
   margin: 4rem auto;
   padding: 0.5rem;
   display: grid;
@@ -8,8 +8,10 @@
 
   img {
     width: 100%;
-    height: 578px;
+    height: 400px;
     border-radius: 25px;
+    margin: 0 auto;
+
 
   }
 
@@ -47,8 +49,9 @@
     text-align: center;
 
     a {
-      font-size: 1.8rem;
-      padding: 1rem;
+      width: 140px;
+      font-size: 2rem;
+      padding: 0.8rem;
       margin: 0.5rem;
       background-color: #48d39f;
       color: #fff;
@@ -79,11 +82,26 @@
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 1000px) {
   .project-container {
+    min-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+
+    .live-demo {
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .project-container {
+    min-width: 80%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
 //     .project-container {
 
