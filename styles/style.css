@@ -13,6 +13,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-animation: entrance 0.5s ease-in;
           animation: entrance 0.5s ease-in;
+  cursor: none;
+  overflow-X: hidden;
 }
 
 h1 {
@@ -71,6 +73,14 @@ a {
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
+}
+
+.main-head a {
+  font-size: 2.2rem;
+}
+
+.main-head li {
+  z-index: 10;
 }
 
 nav {
@@ -182,13 +192,6 @@ nav ul {
   border-radius: 15px;
   padding: 1rem;
   font-size: 1.5rem;
-}
-
-.active {
-  background: #2c2c2c;
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
 }
 
 .intro-text,
@@ -580,5 +583,35 @@ footer h4 {
   .intro-social a {
     margin: 2rem;
   }
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.hover-link {
+  color: #000;
+  z-index: 5;
+}
+
+.link-grow {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background-color: #48d39f;
 }
 /*# sourceMappingURL=style.css.map */
