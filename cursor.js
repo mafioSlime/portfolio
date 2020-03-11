@@ -1,5 +1,6 @@
 let mouseCursor = document.querySelector('.cursor')
 let navLinks = document.querySelectorAll('nav a')
+let img = document.querySelectorAll('img')
 
 const cursor = (e) => {
   mouseCursor.style.top = e.pageY + 'px'
@@ -16,5 +17,7 @@ navLinks.forEach(link => {
     link.classList.add('hover-link')
   })
 })
+
+
 
 window.addEventListener('mousemove', cursor)
