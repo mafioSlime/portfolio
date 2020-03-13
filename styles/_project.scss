@@ -80,10 +80,11 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .project-container {
     min-width: 90%;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
 
     .live-demo {
       a {
